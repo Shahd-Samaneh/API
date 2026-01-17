@@ -1,0 +1,15 @@
+.header{
+    background-color: #FCF8F8;
+}
+
+.Categories .card{
+    background-color: #FCF8F8;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+.Categories .card:hover{
+
+    transform: scale(1.05);
+}

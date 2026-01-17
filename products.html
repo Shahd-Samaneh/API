@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="./assets/css/products.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header d-flex justify-content-center  py-5">
+        <nav class="navbar navbar-expand-lg  ">
+            <div class="container  ">
+                <a class="navbar-brand" href="#">MegaMart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="#">Products</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="products">
+        <div class="container py-5">
+            <div class="row gap-3 d-flex justify-content-center align-items-center">
+                <h2 class="text-center mb-4 categoryName"></h2>
+                <div class="d-flex justify-content-center align-items-center mb-4">
+                    <div class="d-flex gap-2">
+                        <select class="form-select" id="sortField" style="width: 150px;">
+                            <option value="title">Title</option>
+                            <option value="price">Price</option>
+                        </select>
+
+                        <select class="form-select" id="sortOrder" style="width: 150px;">
+                            <option value="asc">ASC</option>
+                            <option value="desc">DESC</option>
+                        </select>
+
+                        <button class="btn btn-primary" onclick="applySort()">Sort</button>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center gap-4 productsRow">
+                </div>
+                <div><ul class="pagination d-flex justify-content-center align-items-center mb-0" ></ul></div>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/products.js"></script>
+</body>
+
+</html>

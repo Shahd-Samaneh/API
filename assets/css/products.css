@@ -1,0 +1,12 @@
+.products .card{
+    background-color: #FCF8F8;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding:50px;
+    
+}
+
+.products .card:hover{
+
+    transform: scale(1.05);
+}
